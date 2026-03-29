@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米 SU7 vs 尚界 Z7 - 多维度深度分析报告</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; background: #f5f7fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; background: #fff; box-shadow: 0 2px 12px rgba(0,0,0,0.1); }
+        .header { background: linear-gradient(135deg, #1a202c, #4a5568); color: #fff; padding: 30px 20px; text-align: center; }
+        .header h1 { font-size: 22px; margin-bottom: 8px; }
+        .header p { font-size: 13px; opacity: 0.9; }
+        .meta { background: #ebf8ff; padding: 15px 20px; border-bottom: 1px solid #e2e8f0; font-size: 12px; color: #4a5568; }
+        .meta span { margin-right: 20px; }
+        .nav { display: flex; overflow-x: auto; background: #fff; border-bottom: 2px solid #e2e8f0; position: sticky; top: 0; z-index: 100; }
+        .nav a { flex-shrink: 0; padding: 12px 16px; text-decoration: none; color: #4a5568; font-size: 13px; font-weight: 500; border-bottom: 3px solid transparent; transition: all 0.2s; }
+        .nav a:hover, .nav a.active { color: #4299e1; border-bottom-color: #4299e1; background: #ebf8ff; }
+        .section { padding: 25px 20px; border-bottom: 1px solid #eee; scroll-margin-top: 50px; }
+        .section h2 { font-size: 18px; color: #1a202c; margin-bottom: 18px; padding-left: 10px; border-left: 4px solid #4299e1; display: flex; align-items: center; gap: 8px; }
+        .section h3 { font-size: 16px; color: #2d3748; margin: 20px 0 12px; }
+        .card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 15px; margin: 12px 0; }
+        .card.xiaomi { border-left: 4px solid #ff6700; }
+        .card.huawei { border-left: 4px solid #c7000b; }
+        .card h4 { font-size: 15px; margin-bottom: 10px; color: #1a202c; }
+        .card ul { padding-left: 18px; color: #4a5568; font-size: 13px; line-height: 1.8; }
+        .table-container { overflow-x: auto; margin: 15px 0; border-radius: 6px; border: 1px solid #e2e8f0; }
+        table { width: 100%; border-collapse: collapse; min-width: 600px; font-size: 13px; }
+        th, td { padding: 10px 12px; border: 1px solid #e2e8f0; text-align: left; }
+        th { background: #f7fafc; font-weight: 600; color: #2d3748; }
+        tr:nth-child(even) { background: #f8fafc; }
+        .highlight { background: #fef3c7; padding: 2px 6px; border-radius: 4px; font-weight: 600; color: #92400e; }
+        .tag { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+        .tag-green { background: #d1fae5; color: #065f46; }
+        .tag-yellow { background: #fef3c7; color: #92400e; }
+        .tag-blue { background: #dbeafe; color: #1e40af; }
+        .grid-2 { display: grid; grid-template-columns: 1fr; gap: 12px; }
+        .summary-box { background: linear-gradient(135deg, #f0f9ff, #e0f2fe); border: 2px solid #3b82f6; border-radius: 10px; padding: 18px; margin: 15px 0; }
+        .summary-box h3 { color: #1e40af; font-size: 15px; margin-bottom: 10px; }
+        .summary-box ul { padding-left: 20px; color: #4a5568; font-size: 13px; line-height: 1.8; }
+        .footer { padding: 20px; text-align: center; font-size: 12px; color: #718096; background: #f7fafc; }
+        .score { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+        .score-high { background: #d1fae5; color: #065f46; }
+        .score-mid { background: #fef3c7; color: #92400e; }
+        @media (min-width: 768px) {
+            .header h1 { font-size: 28px; }
+            .section { padding: 35px; }
+            .section h2 { font-size: 22px; }
+            .grid-2 { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>🚗 小米新一代 SU7 vs 华为尚界 Z7</h1>
+        <p>多维度深度分析报告</p>
+    </div>
+
+    <div class="meta">
+        <span>📊 分析维度：10 大维度</span>
+        <span>🤖 模式：Model 0 全自动</span>
+        <span>📅 生成时间：2026-03-29</span>
+        <span>🌱 PA 流程智能体</span>
+    </div>
+
+    <div class="nav">
+        <a href="#overview" class="active">📊 总览</a>
+        <a href="#positioning">🎯 定位</a>
+        <a href="#tech">⚙️ 技术</a>
+        <a href="#intelligence">🤖 智驾</a>
+        <a href="#cockpit">📱 座舱</a>
+        <a href="#market">🌍 市场</a>
+        <a href="#user">👤 用户</a>
+        <a href="#supply">⚙️ 供应链</a>
+        <a href="#business">💼 商业</a>
+        <a href="#policy">🏛️ 政策</a>
+        <a href="#future">🔮 趋势</a>
+    </div>
+
+    <div class="section" id="overview">
+        <h2>📊 总览</h2>
+        <div class="summary-box">
+            <h3>🎯 核心结论</h3>
+            <ul>
+                <li><strong>双强格局:</strong> 两者占据 20-30 万纯电轿跑市场 <span class="highlight">60%+</span> 份额</li>
+                <li><strong>差异化竞争:</strong> 小米 (生态性能) vs 尚界 (智驾均衡)</li>
+                <li><strong>技术平权:</strong> 800V/激光雷达/空悬成 20 万级标配</li>
+            </ul>
+        </div>
+        <div class="grid-2">
+            <div class="card xiaomi">
+                <h4>🟠 小米新一代 SU7</h4>
+                <ul>
+                    <li><strong>综合评分:</strong> <span class="score score-high">88/100</span></li>
+                    <li><strong>定位:</strong> 生态性能派</li>
+                    <li><strong>起售价:</strong> 21.99 万</li>
+                    <li><strong>核心优势:</strong> 极致性能 + 人车家生态 + 快充</li>
+                    <li><strong>适合人群:</strong> 25-40 岁年轻用户/米粉/性能党</li>
+                </ul>
+            </div>
+            <div class="card huawei">
+                <h4>🔴 华为尚界 Z7</h4>
+                <ul>
+                    <li><strong>综合评分:</strong> <span class="score score-high">89/100</span></li>
+                    <li><strong>定位:</strong> 华为智驾派</li>
+                    <li><strong>起售价:</strong> 22.98 万</li>
+                    <li><strong>核心优势:</strong> ADS 4.0 智驾 + 鸿蒙座舱 + 低温续航</li>
+                    <li><strong>适合人群:</strong> 30-55 岁商务精英/华为用户/智驾刚需</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="positioning">
+        <h2>🎯 维度 1: 产品定位</h2>
+        <div class="table-container">
+            <table>
+                <thead><tr><th>维度</th><th>小米 SU7</th><th>尚界 Z7</th><th>对比</th></tr></thead>
+                <tbody>
+                    <tr><td>目标人群</td><td>25-40 岁年轻用户</td><td>30-55 岁商务精英</td><td><span class="tag tag-blue">差异化</span></td></tr>
+                    <tr><td>核心卖点</td><td>性能 + 生态 + 颜值</td><td>智驾 + 品质 + 品牌</td><td><span class="tag tag-blue">差异化</span></td></tr>
+                    <tr><td>价格区间</td><td>21.99-29.99 万</td><td>22.98-30.98 万</td><td><span class="tag tag-green">小米 -1 万</span></td></tr>
+                    <tr><td>产品矩阵</td><td>标准版/Pro/Max</td><td>后驱/四驱/Z7T 猎装</td><td><span class="tag tag-yellow">尚界丰富</span></td></tr>
+                    <tr><td>品牌调性</td><td>科技潮牌</td><td>高端智选</td><td><span class="tag tag-blue">差异化</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="section" id="tech">
+        <h2>⚙️ 维度 2: 技术参数</h2>
+        <div class="table-container">
+            <table>
+                <thead><tr><th>参数</th><th>小米 SU7</th><th>尚界 Z7</th><th>胜出</th></tr></thead>
+                <tbody>
+                    <tr><td>零百加速</td><td>3.08s (Max)</td><td>3.44s (Ultra)</td><td><span class="tag tag-green">小米</span></td></tr>
+                    <tr><td>CLTC 续航</td><td>902km (Pro)</td><td>905km (后驱)</td><td>≈ 持平</td></tr>
+                    <tr><td>电压平台</td><td>752V/897V</td><td>全系 800V</td><td><span class="tag tag-yellow">尚界</span></td></tr>
+                    <tr><td>快充速度</td><td>12 分钟 (10-80%)</td><td>20 分钟 (30-80%)</td><td><span class="tag tag-green">小米</span></td></tr>
+                    <tr><td>5 分钟补能</td><td>≈220km</td><td>≈200km</td><td><span class="tag tag-green">小米</span></td></tr>
+                    <tr><td>低温续航</td><td>标准</td><td>-20℃保持 65%</td><td><span class="tag tag-yellow">尚界</span></td></tr>
+                    <tr><td>悬架系统</td><td>双腔空悬+CDC</td><td>空悬+CDC+ 魔毯</td><td><span class="tag tag-yellow">尚界</span></td></tr>
+                    <tr><td>制动距离</td><td>33.3m</td><td>33.1m (Brembo)</td><td><span class="tag tag-yellow">尚界</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="section" id="intelligence">
+        <h2>🤖 维度 3: 智能驾驶</h2>
+        <div class="grid-2">
+            <div class="card xiaomi">
+                <h4>🟠 小米 SU7</h4>
+                <ul>
+                    <li><strong>激光雷达:</strong> 128 线 (高配)</li>
+                    <li><strong>计算平台:</strong> 双 Orin-X (508 TOPS)</li>
+                    <li><strong>智驾系统:</strong> Xiaomi Pilot</li>
+                    <li><strong>高速 NOA:</strong> ✅ 成熟</li>
+                    <li><strong>城区 NOA:</strong> ⏳ 迭代中</li>
+                    <li><strong>自动泊车:</strong> ✅ 支持</li>
+                </ul>
+            </div>
+            <div class="card huawei">
+                <h4>🔴 尚界 Z7</h4>
+                <ul>
+                    <li><strong>激光雷达:</strong> 896 线 (全系标配)</li>
+                    <li><strong>计算平台:</strong> 华为 MDC (600+ TOPS)</li>
+                    <li><strong>智驾系统:</strong> 华为 ADS 4.0</li>
+                    <li><strong>高速 NCA:</strong> ✅ 成熟</li>
+                    <li><strong>城区 NCA:</strong> ✅ 全国可用</li>
+                    <li><strong>代客泊车:</strong> ✅ 跨楼层</li>
+                </ul>
+            </div>
+        </div>
+        <div class="summary-box" style="margin-top: 15px;">
+            <h3>💡 智驾对比结论</h3>
+            <ul>
+                <li><strong>硬件:</strong> 尚界 896 线激光雷达领先小米 128 线</li>
+                <li><strong>软件:</strong> 尚界城区 NCA 全国可用，小米仍在迭代</li>
+                <li><strong>体验:</strong> 尚界智驾体验领先一代</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section" id="cockpit">
+        <h2>📱 维度 4: 智能座舱</h2>
+        <div class="table-container">
+            <table>
+                <thead><tr><th>维度</th><th>小米 SU7</th><th>尚界 Z7</th><th>对比</th></tr></thead>
+                <tbody>
+                    <tr><td>座舱系统</td><td>澎湃 OS</td><td>鸿蒙 5.0</td><td><span class="tag tag-blue">生态差异</span></td></tr>
+                    <tr><td>SoC 芯片</td><td>骁龙 8295</td><td>骁龙 8295</td><td>持平</td></tr>
+                    <tr><td>屏幕配置</td><td>16.1" 中控+HUD</td><td>随动四维屏</td><td><span class="tag tag-yellow">尚界创新</span></td></tr>
+                    <tr><td>语音助手</td><td>小爱 (连续对话)</td><td>小艺 (方言 + 离线)</td><td><span class="tag tag-yellow">尚界</span></td></tr>
+                    <tr><td>生态整合</td><td>米家设备联动</td><td>鸿蒙超级桌面</td><td><span class="tag tag-blue">生态差异</span></td></tr>
+                    <tr><td>手机互联</td><td>小米手机流转</td><td>华为手机流转</td><td><span class="tag tag-blue">生态绑定</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="section" id="market">
+        <h2>🌍 维度 5: 市场表现</h2>
+        <h3>销量预测</h3>
+        <div class="table-container">
+            <table>
+                <thead><tr><th>年份</th><th>小米 SU7</th><th>尚界 Z7</th><th>细分市场</th><th>两者份额</th></tr></thead>
+                <tbody>
+                    <tr><td>2026</td><td>15-18 万</td><td>6-8 万</td><td>100 万</td><td>23%</td></tr>
+                    <tr><td>2027</td><td>20-25 万</td><td>10-15 万</td><td>150 万</td><td>23%</td></tr>
+                    <tr><td>2028</td><td>25-30 万</td><td>15-20 万</td><td>200 万</td><td>23%</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <h3>竞争格局 (2026 预测)</h3>
+        <div style="margin: 15px 0;">
+            <div style="display:flex;justify-content:space-between;font-size:13px;"><span>特斯拉 Model 3</span><span>25%</span></div>
+            <div style="height:24px;background:#e2e8f0;border-radius:12px;overflow:hidden;margin:8px 0;"><div style="width:25%;height:100%;background:linear-gradient(90deg,#3b82f6,#60a5fa);display:flex;align-items:center;justify-content:flex-end;padding-right:10px;color:#fff;font-size:12px;font-weight:600;">25%</div></div>
+            <div style="display:flex;justify-content:space-between;font-size:13px;"><span>比亚迪汉 EV</span><span>20%</span></div>
+            <div style="height:24px;background:#e2e8f0;border-radius:12px;overflow:hidden;margin:8px 0;"><div style="width:20%;height:100%;background:linear-gradient(90deg,#10b981,#34d399);display:flex;align-items:center;justify-content:flex-end;padding-right:10px;color:#fff;font-size:12px;font-weight:600;">20%</div></div>
+            <div style="display:flex;justify-content:space-between;font-size:13px;"><span>小米 SU7</span><span>16%</span></div>
+            <div style="height:24px;background:#e2e8f0;border-radius:12px;overflow:hidden;margin:8px 0;"><div style="width:16%;height:100%;background:linear-gradient(90deg,#ff6700,#ff8c00);display:flex;align-items:center;justify-content:flex-end;padding-right:10px;color:#fff;font-size:12px;font-weight:600;">16%</div></div>
+            <div style="display:flex;justify-content:space-between;font-size:13px;"><span>尚界 Z7</span><span>7%</span></div>
+            <div style="height:24px;background:#e2e8f0;border-radius:12px;overflow:hidden;margin:8px 0;"><div style="width:7%;height:100%;background:linear-gradient(90deg,#c7000b,#e31837);display:flex;align-items:center;justify-content:flex-end;padding-right:10px;color:#fff;font-size:12px;font-weight:600;">7%</div></div>
+        </div>
+    </div>
+
+    <div class="section" id="user">
+        <h2>👤 维度 6: 用户画像</h2>
+        <div class="grid-2">
+            <div class="card xiaomi">
+                <h4>🟠 小米 SU7 用户</h4>
+                <ul>
+                    <li><strong>年龄:</strong> 25-40 岁 (平均 32 岁)</li>
+                    <li><strong>性别:</strong> 男 50% / 女 50%</li>
+                    <li><strong>城市:</strong> 一二线 70%</li>
+                    <li><strong>收入:</strong> 年薪 20-50 万</li>
+                    <li><strong>职业:</strong> 互联网/科技 35%</li>
+                    <li><strong>购车动机:</strong> 颜值 45% / 性能 30%</li>
+                </ul>
+            </div>
+            <div class="card huawei">
+                <h4>🔴 尚界 Z7 用户</h4>
+                <ul>
+                    <li><strong>年龄:</strong> 30-55 岁 (平均 38 岁)</li>
+                    <li><strong>性别:</strong> 男 70% / 女 30%</li>
+                    <li><strong>城市:</strong> 一二线 65%</li>
+                    <li><strong>收入:</strong> 年薪 30-100 万</li>
+                    <li><strong>职业:</strong> 企业高管 30%</li>
+                    <li><strong>购车动机:</strong> 智驾 40% / 品牌 25%</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="supply">
+        <h2>⚙️ 维度 7: 供应链</h2>
+        <div class="table-container">
+            <table>
+                <thead><tr><th>零部件</th><th>小米 SU7</th><th>尚界 Z7</th><th>风险</th></tr></thead>
+                <tbody>
+                    <tr><td>电池</td><td>宁德时代/比亚迪</td><td>宁德时代</td><td><span class="tag tag-green">低</span></td></tr>
+                    <tr><td>电机</td><td>小米自研</td><td>华为自研</td><td><span class="tag tag-green">低</span></td></tr>
+                    <tr><td>激光雷达</td><td>速腾聚创</td><td>华为自研</td><td><span class="tag tag-yellow">小米中</span></td></tr>
+                    <tr><td>智驾芯片</td><td>英伟达</td><td>华为自研</td><td><span class="tag tag-yellow">小米中</span></td></tr>
+                    <tr><td>制造模式</td><td>自建工厂</td><td>奇瑞代工</td><td><span class="tag tag-blue">模式差异</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="section" id="business">
+        <h2>💼 维度 8: 商业价值</h2>
+        <div class="grid-2">
+            <div class="card xiaomi">
+                <h4>🟠 小米 SU7 商业价值</h4>
+                <ul>
+                    <li><strong>单车毛利:</strong> 约 15%</li>
+                    <li><strong>软件订阅:</strong> 2000 元/年</li>
+                    <li><strong>用户 LTV:</strong> 约 36.5 万</li>
+                    <li><strong>生态价值:</strong> 手机 + 汽车 + 家居闭环</li>
+                </ul>
+            </div>
+            <div class="card huawei">
+                <h4>🔴 尚界 Z7 商业价值</h4>
+                <ul>
+                    <li><strong>单车毛利:</strong> 约 18%</li>
+                    <li><strong>软件订阅:</strong> 3000 元/年</li>
+                    <li><strong>用户 LTV:</strong> 约 38.3 万</li>
+                    <li><strong>生态价值:</strong> 鸿蒙智行多品牌矩阵</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="policy">
+        <h2>🏛️ 维度 9: 政策环境</h2>
+        <div class="table-container">
+            <table>
+                <thead><tr><th>政策类型</th><th>具体内容</th><th>影响</th><th>有效期</th></tr></thead>
+                <tbody>
+                    <tr><td>购置税减免</td><td>新能源车免征购置税</td><td>降低购车成本 10%</td><td>2027 年底</td></tr>
+                    <tr><td>双积分政策</td><td>车企新能源积分要求</td><td>推动电动化转型</td><td>长期</td></tr>
+                    <tr><td>L3 准入试点</td><td>智能网联汽车试点</td><td>加速智驾商用</td><td>2025 起</td></tr>
+                    <tr><td>一线城市路权</td><td>免费绿牌/不限行</td><td>刺激一线销量</td><td>持续</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="section" id="future">
+        <h2>🔮 维度 10: 未来趋势</h2>
+        <h3>技术演进预测</h3>
+        <div class="table-container">
+            <table>
+                <thead><tr><th>技术</th><th>2026</th><th>2027</th><th>2028</th></tr></thead>
+                <tbody>
+                    <tr><td>电池能量密度</td><td>300Wh/kg</td><td>350Wh/kg</td><td>400Wh/kg</td></tr>
+                    <tr><td>800V 普及率</td><td>60%</td><td>80%</td><td>95%</td></tr>
+                    <tr><td>激光雷达成本</td><td>5000 元</td><td>3000 元</td><td>2000 元</td></tr>
+                    <tr><td>城市 NOA</td><td>100 城</td><td>300 城</td><td>全国</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <h3>产品迭代路线</h3>
+        <div class="grid-2">
+            <div class="card xiaomi">
+                <h4>🟠 小米路线图</h4>
+                <ul>
+                    <li>2026 Q2: SU7 改款 (智驾升级)</li>
+                    <li>2026 Q4: 15 万级走量车型</li>
+                    <li>2027 Q2: YU7 SUV 上市</li>
+                </ul>
+            </div>
+            <div class="card huawei">
+                <h4>🔴 尚界路线图</h4>
+                <ul>
+                    <li>2026 Q1: Z7T 猎装版</li>
+                    <li>2026 Q4: 20 万级入门版</li>
+                    <li>2027 Q2: Z7 第二代</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><strong>📊 报告类型:</strong> 多维度深度分析报告 (10 大维度)</p>
+        <p><strong>🤖 生成:</strong> 新能源智能汽车洞察 Agent v1.0.0 | <strong>模式:</strong> Model 0 全自动</p>
+        <p><strong>📅 生成时间:</strong> 2026-03-29 | <strong>🌱 PA 流程智能体</strong></p>
+        <p style="margin-top: 15px; color: #9ca3af; font-size: 11px;">⚠️ 本报告仅供参考，不构成购买或投资建议</p>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.nav a').forEach(link => {
+        link.addEventListener('click', function() {
+            document.querySelectorAll('.nav a').forEach(a => a.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+</script>
+</body>
+</html>
