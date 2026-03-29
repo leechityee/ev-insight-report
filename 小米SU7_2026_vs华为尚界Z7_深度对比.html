@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>小米 SU7 2026 款 vs 华为尚界 Z7 | 深度竞品分析报告</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #2d3748;
+            line-height: 1.6;
+            padding: 0;
+            min-height: 100vh;
+        }
+        .mobile-nav {
+            position: sticky;
+            top: 0;
+            background: linear-gradient(135deg, #1a202c, #2d3748);
+            color: #fff;
+            padding: 12px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        .mobile-nav .nav-title {
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .mobile-nav .menu-toggle {
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            min-height: calc(100vh - 50px);
+        }
+        .header {
+            background: linear-gradient(135deg, #1a202c, #2d3748);
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 14px;
+            opacity: 0.85;
+        }
+        .section {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .section h2 {
+            font-size: 18px;
+            color: #1a202c;
+            margin-bottom: 15px;
+            padding-left: 12px;
+            border-left: 4px solid #4299e1;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin: 15px 0;
+        }
+        .comparison-table th, .comparison-table td {
+            padding: 12px 10px;
+            border: 1px solid #e2e8f0;
+            vertical-align: top;
+        }
+        .comparison-table th {
+            background: linear-gradient(135deg, #f7fafc, #edf2f7);
+            font-weight: 600;
+            text-align: center;
+        }
+        .comparison-table .dimension-col {
+            width: 15%;
+            background: #f8fafc;
+            font-weight: 600;
+        }
+        .comparison-table .tag-col {
+            width: 8%;
+            text-align: center;
+        }
+        .comparison-table .xiaomi-col {
+            width: 38%;
+        }
+        .comparison-table .huawei-col {
+            width: 38%;
+        }
+        .tag {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .tag-common {
+            background: #c6f6d5;
+            color: #22543d;
+        }
+        .tag-diff {
+            background: #feebc8;
+            color: #744210;
+        }
+        .brand-xiaomi {
+            color: #ff6700;
+            font-weight: 600;
+        }
+        .brand-huawei {
+            color: #c7000b;
+            font-weight: 600;
+        }
+        .bottom-tab {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #fff;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: space-around;
+            padding: 8px 0;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        }
+        .bottom-tab a {
+            text-decoration: none;
+            color: #718096;
+            font-size: 12px;
+            text-align: center;
+            padding: 5px 10px;
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+        .bottom-tab a.active {
+            color: #4299e1;
+            background: #ebf8ff;
+        }
+        .bottom-tab a .icon {
+            font-size: 18px;
+            display: block;
+            margin-bottom: 2px;
+        }
+        .highlight {
+            background: #fef3c7;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+        .footer {
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #718096;
+            background: #f7fafc;
+            margin-bottom: 50px;
+        }
+        
+        @media (min-width: 769px) {
+            .mobile-nav, .bottom-tab {
+                display: none;
+            }
+            .container {
+                border-radius: 16px;
+                box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+                margin: 20px auto;
+            }
+            .header {
+                border-radius: 16px 16px 0 0;
+                padding: 40px 30px;
+            }
+            .header h1 {
+                font-size: 28px;
+            }
+            .section {
+                padding: 30px;
+            }
+            .section h2 {
+                font-size: 22px;
+            }
+            .comparison-table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 移动端顶部导航 -->
+<nav class="mobile-nav">
+    <div class="nav-title">竞品分析报告</div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+</nav>
+
+<div class="container">
+    <div class="header">
+        <h1>🏆 小米 SU7 2026 款 vs 华为尚界 Z7</h1>
+        <p>10 大维度深度对比 · 2026 年最新版</p>
+    </div>
+
+    <div class="section">
+        <h2>📊 完整对比表</h2>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th class="dimension-col">维度</th>
+                    <th class="tag-col"></th>
+                    <th class="xiaomi-col"><span class="brand-xiaomi">小米 SU7 2026 款</span></th>
+                    <th class="huawei-col"><span class="brand-huawei">华为尚界 Z7</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1. 定价与产品矩阵</td>
+                    <td><span class="tag tag-common">共性</span></td>
+                    <td>两者起售价均锚定 21-23 万区间，采用"低门槛入门 + 高配拉溢价"策略，价格带高度重叠</td>
+                    <td>预售价 22.98 万起，Z7T 猎装版 23.98 万起；提供后驱/四驱 Ultra 版，卡位 22-35 万级</td>
+                </tr>
+                <tr>
+                    <td>2. 动力与性能</td>
+                    <td><span class="tag tag-diff">差异</span></td>
+                    <td>两者均具备 3-4 秒级加速，小米更激进 (3.08s)，华为更均衡 (3.9s 但日常质感优先)</td>
+                    <td>全系超级电机 V6s Plus；Max 版零百 3.08 秒，最高时速 265km/h</td>
+                </tr>
+                <tr>
+                    <td>3. 续航与补能</td>
+                    <td><span class="tag tag-common">共性</span></td>
+                    <td>两者最大续航均突破 900km+(CLTC)，全系 800V 高压标配；续航难拉差距，应聚焦补能体验</td>
+                    <td>81kWh 和 100kWh 两种电池；最大续航 905km；全系巨鲸 800V 平台</td>
+                </tr>
+                <tr>
+                    <td>4. 智能驾驶</td>
+                    <td><span class="tag tag-common">共性</span><br><span class="tag tag-diff">差异</span></td>
+                    <td>均全系标配激光雷达 + 高阶智驾，但技术路线差异显著——小米大算力 + 端到端 vs 华为高精度感知 + 勘测数据</td>
+                    <td>ADS 4.1；全系 896 线双光路激光雷达 (精度 4x+)；无图城区 NCA+ 车位到车位自动驾驶</td>
+                </tr>
+                <tr>
+                    <td>5. 智能座舱与生态</td>
+                    <td><span class="tag tag-common">共性</span><br><span class="tag tag-diff">差异</span></td>
+                    <td>均有强大座舱生态，小米强在人车家互联，华为强在商务办公 + 创新交互</td>
+                    <td>HarmonyOS 5.0+ 骁龙 8295；随动四维屏；灵感橱窗；ALPS 健康座舱 2.0(水离子空调)</td>
+                </tr>
+                <tr>
+                    <td>6. 底盘与安全</td>
+                    <td><span class="tag tag-common">共性</span></td>
+                    <td>底盘均达豪华级，小米被动安全更突出 (2200MPa)，华为智能底盘协同更领先 (途灵平台)</td>
+                    <td>途灵平台；前双叉臂 + 后五连杆；空悬+CDC；雷达扫路魔毯滤震；轴距 3000mm</td>
+                </tr>
+                <tr>
+                    <td>7. 用户画像</td>
+                    <td><span class="tag tag-diff">差异</span></td>
+                    <td>小米吸引年轻潮人 (25-40 岁，女性 50%)，华为吸引商务精英 (30-55 岁，男性 70%)；35-45 岁家庭用户是空白</td>
+                    <td>30-55 岁；年收入 30-100 万+；男性 7:3；华为全家桶用户；智驾驱动</td>
+                </tr>
+                <tr>
+                    <td>8. 销量与市场</td>
+                    <td><span class="tag tag-common">共性</span></td>
+                    <td>小米为纯电轿车销冠 (25.8 万辆)，华为总量大 (58.9 万辆) 但轿车需爬坡；新玩家空间在 BBA 替代</td>
+                    <td>鸿蒙智行 2025 年全系 58.9 万辆；Z7 为 20-30 万轿车主力；2026 目标 100 万辆</td>
+                </tr>
+                <tr>
+                    <td>9. SWOT</td>
+                    <td><span class="tag tag-diff">差异</span></td>
+                    <td>小米壁垒在生态 + 性价比，短板在品牌向上；华为壁垒在智驾 + 溢价，短板在代工 + 价格门槛</td>
+                    <td>S: 智驾天花板/鸿蒙/溢价；W: 代工/价格高；O: 替代 BBA/超充/L3；T: 仰望/蔚来竞争</td>
+                </tr>
+                <tr>
+                    <td>10. 差异化机会</td>
+                    <td><span class="tag tag-common">共性</span></td>
+                    <td>2026 竞争转向智驾 + 生态 + 场景三位一体；机会在未覆盖用户群、特定场景极致化、独特服务生态</td>
+                    <td>路径：智驾降维打击 + 鸿蒙 + 座舱创新；扩展：五界矩阵全覆盖</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>💡 核心洞察</h2>
+        <div style="background: linear-gradient(135deg, #f0fdf4, #dcfce7); padding: 20px; border-radius: 12px; border-left: 5px solid #22c55e; margin: 15px 0;">
+            <h3 style="color: #166534; margin-bottom: 10px; font-size: 16px;">🎯 竞争格局判断</h3>
+            <p style="color: #065f46; line-height: 1.8;">
+                2026 年竞争转向<span class="highlight">智驾 + 生态 + 场景三位一体</span>。小米强在生态闭环和性价比，华为强在智驾技术和品牌溢价。
+                两者合计占据 20-30 万纯电轿跑市场<span class="highlight">60%+</span>份额，BBA 持续边缘化。
+            </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>📈 购买建议</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+            <div style="background: #fff9f0; padding: 15px; border-radius: 10px; border-left: 4px solid #ff6700;">
+                <h3 style="color: #ff6700; margin-bottom: 10px; font-size: 15px;">选小米 SU7</h3>
+                <ul style="padding-left: 18px; color: #4a5568; font-size: 13px; line-height: 1.8;">
+                    <li>25-40 岁年轻用户</li>
+                    <li>米粉/生态用户</li>
+                    <li>追求性价比</li>
+                    <li>女性用户友好</li>
+                </ul>
+            </div>
+            <div style="background: #fef2f2; padding: 15px; border-radius: 10px; border-left: 4px solid #c7000b;">
+                <h3 style="color: #c7000b; margin-bottom: 10px; font-size: 15px;">选尚界 Z7</h3>
+                <ul style="padding-left: 18px; color: #4a5568; font-size: 13px; line-height: 1.8;">
+                    <li>30-55 岁商务精英</li>
+                    <li>华为全家桶用户</li>
+                    <li>智驾刚需</li>
+                    <li>高收入男性为主</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>📊 数据来源：用户提供的对比表格</p>
+        <p>🤖 生成：新能源智能汽车洞察 Agent v1.0.0</p>
+        <p>📅 2026-03-29 | 🌱 PA 流程智能体</p>
+    </div>
+</div>
+
+<!-- 移动端底部 Tab -->
+<div class="bottom-tab">
+    <a href="#" class="active" onclick="scrollToSection(0)">
+        <span class="icon">📊</span>
+        对比表
+    </a>
+    <a href="#" onclick="scrollToSection(1)">
+        <span class="icon">💡</span>
+        洞察
+    </a>
+    <a href="#" onclick="scrollToSection(2)">
+        <span class="icon">📈</span>
+        建议
+    </a>
+</div>
+
+<script>
+    function toggleMenu() {
+        alert('目录功能开发中...');
+    }
+    
+    function scrollToSection(index) {
+        const sections = document.querySelectorAll('.section');
+        if (sections[index]) {
+            sections[index].scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // 更新 active 状态
+        document.querySelectorAll('.bottom-tab a').forEach((a, i) => {
+            a.classList.toggle('active', i === index);
+        });
+        
+        return false;
+    }
+</script>
+
+</body>
+</html>
